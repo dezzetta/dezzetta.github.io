@@ -1,0 +1,118 @@
+/*FOOTER TOP*/
+.style-one.footer-area {
+    background: url(../assets/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 119px 0 32px;
+}
+
+.style-one .footer-widget-title h4 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 26px;
+}
+
+.style-one .footer-widget-desc p{
+    color: #fff;
+    white-space: pre-line;
+}
+
+.style-one .foot-2 ul , .style-one .foot-3 ul {
+    list-style: none;
+}
+.style-one .foot-2 ul li ,.style-one .foot-3 ul li {
+    margin: 0 0 2% 0;
+}
+.style-one .foot-2 ul a, .style-one .foot-3 ul a, .style-one .foot-3{
+    text-decoration: none;
+    color: #fff;
+}
+.style-one .foot-2 ul li:before ,.style-one .foot-3 ul li:before {
+    content: '\21E8';
+    border-radius: 50%;
+    margin: 0 5% 0 0;
+    padding: 10px;
+    color: #0D58D5;
+    width: 16px;
+    height: 16px;
+}
+.style-one .foot-3 input[type="text"]{
+    background: transparent;
+    border: 1px solid #ffffff52;
+    padding: 0 15px;
+    height: 60px;
+    width: 100%;
+    color: #fff;
+    border-radius: 3px;
+    outline: 0;
+}
+.style-one .foot-3 button{
+    background: #0C59DB;
+    color: #fff;
+    border: transparent;
+    outline: 0;
+    padding: 12px 33px;
+    border-radius: 3px;
+    margin-top: 21px;
+}
+
+/*MEDIAS QUERY*/
+
+.footer-area-container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/*MEDIDAS FLEX*/
+.footer-top-area {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foot-1 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+
+.foot-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+}
+
+.foot-3 {
+    flex: 0 0 auto;
+    width: 25%;
+}
+
+.foot-4 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+/*FOOTER BOTTOM*/
+.footer-bottom-area {
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #ffffff21;
+}
+
+/*COPYRIGHT*/
+.footer-bottom-content {
+    color: white;
+}
+
+.footer-botton-social-icon {
+    text-align: right;
+    display: flex;
+    justify-content: end;
+}
+
+.footer-botton-social-icon ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: space-evenly;
+    width: 25%;
+}

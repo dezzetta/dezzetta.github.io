@@ -1,0 +1,261 @@
+/*ESTILOS GENERALES WEB*/
+body {
+    margin: 0px;
+    font-family: "Nunito";
+}
+
+main {
+    background: #F3F7FD;
+}
+
+div.main-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
+}
+
+/* BANNER CAMINO DE MIGAS*/
+
+.breadcumb-area {
+    background: url(https://html.ditsolution.net/toptech/assets/images/about-inner/breadcumb-bg.png) no-repeat center center;
+    color: white;
+    padding: 150px 100px 200px;
+    background-size: cover;
+}
+
+.breadcumb-area ul {
+    display: flex;
+    width: 25%;
+    list-style-type: none;
+    border: 2px solid #ffffff47;
+    border-radius: 5px;
+    padding: 8px 33px;
+}
+
+.breadcumb-area h4 {
+    font-size: 54px;
+    margin: 0px;
+}
+
+.breadcumb-area ul li {
+    margin: 0 4px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.breadcumb-area ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*ESTILOS PRESUPUESTO*/
+
+.presupuesto-container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10% 0 10%;
+}
+
+.presupuesto-area {
+    width: 40%;
+}
+
+.presupuesto-form-container {
+    width: 30%;
+}
+.presupuesto-form {
+    background: #FAFAFA;
+    padding: 3.125rem;
+}
+.presupuesto-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+}
+.presupuesto-form form input:not([type=checkbox]){
+    height: 40px;
+}
+.presupuesto-form form input:not([type=checkbox]),.presupuesto-form form textarea{
+    background: transparent;
+    border: 0px;
+    border-bottom: 1px solid #87878733;
+    font-size: 14px;
+
+}
+
+.presupuesto-form form .presupuesto-pdp{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.presupuesto-form form .presupuesto-pdp input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+}
+
+.presupuesto-form form .presupuesto-pdp a{
+    text-decoration: none;
+    color: black;
+}
+
+.presupuesto-form form .presupuesto-pdp a:hover{
+    text-decoration: underline;
+}
+    
+
+.presupuesto-form form button {
+    padding: 25px 60px;
+    background: #0F4BB9;
+    color: #fff;
+    border-radius: 100px;
+    border: 0px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.presupuesto-form form button:hover {
+    background: white;
+    box-shadow: inset 0 2px 4px #0000001a;
+    color: black;
+}
+
+
+/*ESTILOS CONTACTO */
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10% 0 10%;
+}
+
+.white-bg {
+    background-color: white;
+    filter: drop-shadow(0px 10px 50px rgba(217, 217, 217, 0.5));
+    padding: 2.8rem 2.5rem;
+    border-radius: 2%;
+}
+.contact-container iframe{
+    width: 99%;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*CONTACT FORM BOX*/
+.contact-form {
+    width: 70%;
+    margin-right: 60px;
+}
+
+.contact-form form input[type="text"],
+.contact-form form select,
+.contact-form form input[type="email"],
+.contact-form form input[type="tel"] {
+    border: 2px solid rgba(4, 20, 36, 0.1);
+    border-radius: 3px;
+    width: 100%;
+    height: 60px;
+    margin: 0 10px 20px;
+    padding: 0 20px;
+}
+
+.contact-form .form-class .form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-form .form-class .form-row textarea {
+    border: 2px solid rgba(4, 20, 36, 0.1);
+    border-radius: 3px;
+    outline: 0;
+    width: 100%;
+    height: 160px;
+    margin-bottom: 27px;
+    padding: 17px 20px;
+}
+
+.contact-form .form-class .form-row button {
+    background-color: #0c5adb;
+    border: 2px solid #0c5adb;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.5s;
+    padding: 15px 38px;
+    cursor: pointer;
+}
+
+.contact-form .form-class .form-row button:hover{
+    background: #fff;
+    color: #0c5adb;
+}
+
+/*CONTACT RIGHT BOX*/
+.contact-box {
+    background: url(../assets/dzt-contact-info.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    color: #ffffff;
+    width: 30%;
+    padding: 60px 49px 49px;
+}
+
+.contact-box-info {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin-bottom: 48px;
+}
+
+.contact-box-info img{
+    width: 54px;
+    height: 54px;
+    color: white;
+}
+
+.contact-box h4 {
+    font-size: 30px;
+}
+
+.contact-box h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 1px 0 0;
+}
+
+.contact-box p {
+    font-size: 15px;
+    margin: 0px;
+}
+
+.contact-box ul li {
+    list-style-type: none;
+}
+
+
+/*POLITICA PRIVACIDAD y AVISO LEGAL*/
+
+.politica-privacidad-area, .aviso-legal-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 3% auto;
+}

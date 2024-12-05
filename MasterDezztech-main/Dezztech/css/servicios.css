@@ -1,0 +1,219 @@
+/*SERVICIOS*/
+
+.service-area {
+    padding: 90px 0 60px;
+    background: #F3F7FD;
+}
+
+.services-title {
+    text-align: center;
+    margin: 0 0 5% 4%;
+}
+
+.services-title h1,
+.services-title h4 {
+    margin: 0px;
+}
+
+.services-col {
+    margin: 9% 0;
+}
+.services-col .services-title h4{
+    font-size: 18px;
+    color: #0c5adb;
+    font-weight: 600;
+    margin: 0 0 2% 0;
+}
+
+.services-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4%;
+    margin: 0 12%;
+}
+
+.services-row .services-container {
+    text-align: center;
+    background: #fff;
+    padding: 0px 20px 32px;
+}
+.services-row .services-container:hover a{
+    background: transparent;
+    color: #0C59DB;
+    border: 1px solid #0C59DB;
+}
+
+.services-row .services-container:hover .service-icon {
+    background:#0B5AD9;
+    border: 1px solid #0C59DB;
+    transition: 0.5s;
+}
+
+
+.services-row .services-container .service-icon {
+    width: 85px;
+    height: 85px;
+    position: relative;
+    top: -30px;
+    left: 34%;
+    border-radius: 50%;
+    background: white;
+}
+
+.services-row .services-container .service-icon img {
+    padding: 23%;
+    background: #f3f8fd;
+    border-radius: 50%;
+    position: relative;
+    top: 3%;
+}
+
+.services-row .services-container h4 {
+    font-size: 24px;
+    margin: 2% 0;
+}
+
+.services-row .services-container a {
+    display: inline-block;
+    color: #fff;
+    margin-top: 13px;
+    background: #0C59DB;
+    padding: 7px 36px;
+    border-radius: 30px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+/*CONTACTANOS */
+.service-contact-area {
+    display: grid;
+    grid-gap: 10px;
+    padding: 48px 43px 48px;
+    background: url(../assets/servicios/contact-us.png) no-repeat center;
+    background-size: cover;
+    border-radius: 5px;
+    color: #fff;
+}
+.service-contact-area p, .service-contact-area .service-contact-mail, .service-contact-area .service-contact-mail a{
+    font-size: 18px;
+    color: #fff;
+}
+
+.service-contact-area .service-contact-mail span{
+    color: #0c5adb;
+}
+
+.service-contact-area .service-contact-button a{
+    display: inline-block;
+    background: #0c5adb;
+    padding: 16px 98px 15px;
+    margin-top: 55px;
+    border: 2px solid #0c5adb;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.service-contact-area .service-contact-button a:hover{
+    background: transparent;
+    color: #0c5adb;
+}
+/* SERVICIOS DETAILS*/
+
+.service-details-area {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    margin: 5% auto 5%;
+    gap: 20px;
+}
+
+.service-details-content {
+    width: 70%;
+}
+
+.service-details-contact {
+    width: 30%;
+}
+
+.service-details-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.service-details {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 27px 18px;
+    filter: drop-shadow(0px 10px 50px rgba(217, 217, 217, 0.5));
+    border-radius: 8px;
+}
+.service-details-options .service-details {
+    background: #F6F6EE;
+}
+.service-details-options .service-details h4{
+    font-size: 24px;
+}
+
+.service-details-icon {
+   display: grid;
+   place-items: center;
+   width: 80px;
+   height: 80px;
+   padding: 2%;
+   background: #fff;
+   border-radius: 50%;
+   filter: drop-shadow(0px 10px 50px rgba(217, 217, 217, 0.5));
+}
+
+.service-details-content-icon img {
+    width: 100%;
+}
+
+/*SERVICIOS DETALLES BENEFICIOS*/
+.service-details-benefits {
+    margin: 6% 0 0 0;
+}
+
+.sd-benefits-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.sd-benefits-container-info img {
+    width: 100%;
+    height: 225px;
+    border-radius: 7px;
+}
+
+.sd-benefits-container-content {
+    width: 80%;
+    margin: -28px auto 0;
+    background: #ffffff;
+    padding: 30px 31px 23px;
+    filter: drop-shadow(0px 5px 30px rgba(117, 117, 117, 0.1));
+    border-radius: 5px;
+}
+
+.sd-benefits-container-content h4 {
+    margin: 0px;
+}
+
+.sd-benefits-container-content ul {
+    list-style-type: none;
+    margin: 3% 0;
+    padding: 0px;
+}
+
+.sd-benefits-container-content ul li {
+    margin-bottom: 5%;
+}
+
+.sd-benefits-container-content ul li:before {
+    content: "\2713\0020";
+    margin: 0 5% 0 0;
+}

@@ -1,0 +1,236 @@
+main:has(.home-area) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-area {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30% 0px 10% 0px;
+    gap: 4%;
+}
+
+/*SECCION 1 CONTAINER */
+.home1-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.home1-container .home-title-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home1-container .home-image-container {
+    width: 50%;
+}
+
+/*HOME SECCION 1 TEXTO*/
+.home-title-container .home-title-1 h1 {
+    font-size: 70px;
+}
+.home-title-container .home-title-1 span {
+    color: #0F4BB9;
+    font-size: 70px;
+}
+.home-title-container .home-title-1 p {
+    width: 85%;
+}
+
+/*HOME SECCION 1 BUTTON*/
+.home-title-container .home-title-1 .home-title1-button {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    -webkit-backface-visibility: hidden;
+    background: #233fd6;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    padding: 13px 30px;
+    position: relative;
+    text-transform: capitalize;
+    z-index: 1;
+    cursor: pointer;
+}
+.home-title-container .home-title-1 .home-title1-button:hover {
+    background: #1f39c0;
+}
+.home-title-container .home-title-1 .home-title1-button span{
+    color: #fff;
+    font-size: 20px;
+}
+
+/*HOME SECCION 1 IMAGEN*/
+.home1-container .home-image-container {
+    background-size: contain;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.home1-container .home-image-container img{
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+/*HOME SECCION 1 AWARD*/
+
+.home-title-container .home-award {
+    width: 320px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    position: absolute;
+    left: 45%;
+    bottom: 30%;
+    border-radius: 40px;
+    box-shadow: 0 2px 8px 0 rgba(34, 31, 60, .1);
+    padding: 1.75rem;
+    gap: 2rem;
+}
+.home-title-container .home-award .award-icon{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #233fd6;
+    border-radius: 100px;
+    outline: 1px solid #233fd6;
+    outline-offset: 5px;
+}
+.home-title-container .home-award .award-text h1{
+    margin: 0px 0px 0.5rem 0px;
+    font-size: 40px;
+}
+
+/* HOME SECCION 2 CONTADOR */
+.home2-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.home2-container .home2-score h2{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.home2-container  .yellow{
+    color: #fbb132;
+}
+.home2-container  .red{
+    color: #f97d7f;
+}
+.home2-container  .green{
+    color: #7dc370;
+}
+.home2-container  .purple{
+    color: #8956b3;
+}
+.home2-container .home2-score p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #525252;
+    margin: 0px;
+}
+/*HOME SECCION 3 ABOUT US*/
+
+/*ESTRUCTURA*/
+
+.home3-container {
+    display: flex;
+    position: relative;
+    gap: 10%;
+    width: 100%;
+}
+.home3-container .home-image-container {
+    width: 45%;
+}
+.home3-container .home-image-container {
+    width: 100%;
+    object-fit: contain;
+}
+.home3-container .home-text-container {
+    width: 50%;
+}
+
+/*AWARD CONTAINER*/
+.home3-container .home3-award {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 rgba(34, 31, 60, .1);
+    max-width: 250px;
+    width: 250px;
+    max-height: 250px;
+    height: 250px;
+    padding: 40px 30px 40px 40px;
+    position: absolute;
+    top: 23%;
+    left: 25%;
+    z-index: 1;
+}
+.home3-container .home3-award .icon{
+    max-width: 60px;
+    max-height: 60px;
+}
+/*DIV 1 TITLE 1*/
+.home3-container .home-title-1 {
+    display: grid;
+    gap: 20px;
+    background: url(../assets/home/sombra.svg);
+}
+.home3-container .home-title-1 h5, .home3-container .home-title-1 h2, .home3-container .home-title-1 p {
+    margin: 0px;
+    gap: 10px;
+}
+.home3-container .home-title-1 h5{
+  color: #233fd6;
+  font-size: 18px;
+}
+.home3-container .home-title-1 h2{
+    font-size: 35px;
+    color: #000b47;
+    line-height: 60px;
+}
+.home3-container .home3-award .award-content h2 {
+    color: #000b47;
+    font-size: 30px;
+
+}
+
+.home3-container .home-title-1 p{
+    font-size: 18px;
+    color: #525252;
+    line-height: 32px;
+}
+.home3-container .home-title-1 p span{
+    color: #000b47;
+    font-size: 20px;
+    font-weight: bold;
+}
+.home3-container .home-title-1 .signature-container hr{
+    width: 50%;
+    text-align: left;
+    margin: 3% 0px;
+}
+
+/*DIV 2 TITLE 2*/
+.home3-container .home-title-2 .sombra-1 {
+    display: flex;
+    justify-content: flex-end;
+}
