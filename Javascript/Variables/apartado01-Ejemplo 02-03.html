@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vectores y matrices</title>
+    </head>
+    <body>
+        <script language="Javascript">
+            var mivector = ["coche","moto","avión"];
+            console.log("vector original "+mivector);
+            mivector.push("barco");
+            mivector.unshift("triciclo");
+            console.log("vector con dos elementos más: "+mivector);
+            mivector.splice(mivector.indexOf("moto"),1);
+            mivector.forEach(function (elemento,índice,array){
+                console.log(elemento, índice);
+            });
+        </script>
+    </body>
+</html>
