@@ -1,0 +1,40 @@
+{
+    "productos": [
+      {
+        "titulo": "Sony WH-1000XM4",
+        "precio": "145.76€",
+        "imagen": "https://www.sony.es/image/5d02da5df552836db894cead8a68f5f3?fmt=pjpeg&wid=165&bgcolor=FFFFFF&bgc=FFFFFF"
+      },
+      {
+        "titulo": "Toshiba 40LF3F63DAE Full HD Smart Fire TV",
+        "precio": "209.99€",
+        "imagen": "https://m.media-amazon.com/images/I/61MQ0g0h9sL.__AC_SY300_SX300_QL70_ML2_.jpg"
+      },
+      {
+        "titulo": "Epson Impresora multifunción EcoTank ET-2862",
+        "precio": "169.99€",
+        "imagen": "https://m.media-amazon.com/images/I/71geTddB3yL._AC_SX679_.jpg"
+      },
+      {
+        "titulo": "ASUS Vivobook 15 F1504ZA-NJ691W ",
+        "precio": "529,00€",
+        "imagen": "https://m.media-amazon.com/images/I/71+5loltm-L._AC_SY300_SX300_.jpg"
+      },
+      {
+        "titulo": "De'Longhi La Specialista Arte EC9155.W",
+        "precio": "439,64€",
+        "imagen": "https://m.media-amazon.com/images/I/612swAc3zLL.__AC_SX300_SY300_QL70_ML2_.jpg"
+      },
+      {
+        "titulo": "Amazon Fire TV Stick HD (Última generación)",
+        "precio": "45€",
+        "imagen": "https://m.media-amazon.com/images/I/51UwTe22aOL._AC_SL1000_.jpg"
+      },
+      {
+        "titulo": "Delta Cafés - Café en Grano Colombia - 2 Paquetes de 1 Kg - Intensidad 9 ",
+        "precio": "51,62€",
+        "imagen": "https://m.media-amazon.com/images/I/71It7J9L6rL.__AC_SX300_SY300_QL70_ML2_.jpg"
+      }
+    ]
+  }
+  

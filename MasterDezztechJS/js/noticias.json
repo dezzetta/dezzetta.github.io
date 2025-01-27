@@ -1,0 +1,35 @@
+{
+    "noticias": [
+      {
+        "titulo": "Microsoft quiere ganar más dinero con la IA, así que ha rediseñado su Copilot profesional para conquistar a las empresas",
+        "fecha": "15-01-2025",
+        "imagen": "https://i.blogs.es/6065e1/nadella/500_333.jpeg",
+        "contenido": "En su afán por mantenerse a la vanguardia de la inteligencia artificial (IA), muchas tecnológicas están gastando un dineral, aunque ser referentes en esta industria no es suficiente: necesitan que sus inversiones se traduzcan en resultados tangibles. Microsoft está tratando de ganar más clientes con el relanzamiento de su Copilot para empresas. <br> Se trata de Microsoft 365 Copilot Chat, un producto que ha ido mutando a lo largo del tiempo, no solo en su nombre (al principio se llamaba Bing Chat Enterprise), sino en características. El desafío de la firma de Redmond es doble: no solo debe convencer a las empresas de utilizar su IA, sino también debe animarlas a pagar una tarifa perídica."
+      },
+      {
+        "titulo": "Telefónica ha sufrido una brecha. El alcance aún no está claro, pero un ciberdelincuente ha publicado 2,3 GB de datos",
+        "fecha": "10-01-2025",
+        "imagen": "https://i.blogs.es/0755b5/brecha-seguridad-telefonica-portada/500_333.jpeg",
+        "contenido": "El pasado 9 de enero apareció en un prolífico foro de ciberdelincuencia una publicación en la que uno de sus miembros aseguraba haber robado 2,3 GB de datos de Telefónica. Según el usuario apodado DNA, se trataba de una base de datos de Jira, un conocido sistema de tickets de soporte y solicitudes de servicios que utilizan muchas empresas internamente. <br> Como suele ser habitual en este tipo de escenarios, el enlace de descarga podía desbloquearse utilizando créditos (que se pueden adquirir utilizando criptomonedas), una forma que los atacantes tienen para conseguir dinero. Una muestra sugería que se trataba de Jira y podíamos encontrar varias referencias a telefónica, como correos @telefonica.com."
+      },
+      {
+        "titulo": "El éxito de la planta de TSMC en Arizona es indudable: ya va a entregar a Apple sus primeros chips 'made in Phoenix'",
+        "fecha": "05-01-2025",
+        "imagen": "https://i.blogs.es/30e1b5/tsmc-ap/500_333.jpeg",
+        "contenido": "Probablemente nadie lo habría vaticinado hace apenas seis meses. Durante los últimos dos años la fábrica de semiconductores que acaba de construir TSMC en Arizona (EEUU) le ha deparado innumerables quebraderos de cabeza. Como os hemos explicado en otros artículos dedicados a esta planta, debería haber iniciado la producción de semiconductores hace casi un año, pero le ha costado mucho encontrar el personal cualificado que necesitaba.Además, durante muchos meses tuvo problemas con los sindicatos de trabajadores. Y, para rizar aún más el rizo, el Gobierno local se enfrentó a dificultades para crear el ecosistema legal que requiere la puesta en marcha de una fábrica de chips de vanguardia. Durante 2023 y buena parte de 2024 la fábrica de chips de Arizona solo ha deparado malas noticias a TSMC, pero esto se acabó. Y es que no solo está a punto de iniciar la producción a gran escala de circuitos integrados; sus tests iniciales son realmente prometedores."
+      },
+      {
+        "titulo": "Países Bajos se une a EEUU en la mano dura frente a China: prohibirá a ASML venderle aún más máquinas para chips",
+        "fecha": "30-12-2024",
+        "imagen": "https://i.blogs.es/02e3f4/asml-ap/500_333.jpeg",
+        "contenido": "Los Gobiernos de EEUU y Países Bajos han estado alineados desde que comenzaron las tensiones con China en el ámbito de los semiconductores. La iniciativa la ha llevado siempre la Administración estadounidense, pero en esencialmente todas las ocasiones el Gobierno neerlandés ha respaldado todas aquellas sanciones que implicaban a sus empresas. Y la más afectada de todas ellas es ASML, el fabricante de equipos de litografía más importante del planeta. El negocio de esta compañía en China está cada vez más comprometido. De hecho, su director general, Peter Wennink primero y Christophe Fouquet actualmente, ha levantado la voz en varias ocasiones para hacer saber al Gobierno de Países Bajos que estas medidas están dañando a su empresa. 'Si observas el panorama geopolítico creo que está claro que EEUU continuará presionando a sus aliados para que impongan más restricciones', aseguró Fouquet a finales de octubre."
+      },
+      {
+        "titulo": "La Nintendo Switch 2 ya está aquí: la firma nipona enseña (por fin) su nueva consola y confirma fecha de anuncio",
+        "fecha": "16-01-2025",
+        "imagen": "https://i.blogs.es/3d873c/captura-de-pantalla-2025-01-16-142556/500_333.png",
+        "contenido": "Por fin. Tras infinitas filtraciones y rumores, Nintendo acaba de anunciar la nueva Nintendo Switch 2. La consola se hace oficial y se ha dejado ver en (casi) todo su esplendor, confirmando nuevos Joy-Con que se despiden del mecanismo de acople actual, un mayor tamaño y la tan esperada, aunque obvia, retrocompatibilidad con juegos de Nintendo Switch. Y sí, además de esto, Nintendo ha confirmado la fecha en la que la presentarán oficialmente. <br> <br> Así es la nueva Nintendo Switch 2. Tal y como podemos ver en el vídeo, la Nintendo Switch 2 es bastante más grande y parece algo más delgada que su antecesora, tienes los bordes más curvados y un acabado muchísimo más elegante que, sin dejar de lado los colores, apuesta por un frontal y parte trasera de color negro. La pantalla también ocupa más porcentaje del frontal. <br><br> Los Joy-Con son negros y el color se ha reservado para los joysticks y para el mecanismo de acople. Este supone un cambio fundamental con respecto a la generación anterior, ya que en lugar de encajarse desde arriba, los Joy-Con se acoplan a la consola mediante un conector lateral y un sistema de imantado. Para sacarlos, habrá que pulsar un botoncito escondido tras el botón RT y RL. Es en la parte que engancha a la consola donde Nintendo ha puesto todos los colores"
+      }
+    ]
+  }
+  

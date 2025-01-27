@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/home/iconDezztech.png">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../js/lightbox2-dev/dist/css/lightbox.min.css" rel="stylesheet">
+    <script src="../js/lightbox2-dev/dist/js/lightbox-plus-jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/presupuesto.css" rel="stylesheet"> 
+    <link rel="icon" href="../assets/home/iconDezztech.png">
+
+    <title>Galeria</title>
+
+    <script>
+
+        function cargar() {
+                 $.ajax({
+                     url: '../js/noticias.json',
+                     type: 'GET',
+                     success: function (data) {
+                         //leemos el contenido
+                         var cadena = "";
+                         for (i = 0; i < data.noticias.length; i++) {
+                             cadena = cadena + "Nombre: <b>" +
+                                data.noticias[i].titulo + "</b><br/>";
+                             cadena = cadena + "Edad: " +
+                             data.noticias[i].fecha + "<br/>";
+                             cadena = cadena + "Ciudad: " +
+                             data.noticias[i].imagen + "<br/>";
+                             cadena = cadena + "Profesion: " +
+                             data.noticias[i].contenido + "<br/>";
+                         }
+                         $("#contenedor-noticias").html(cadena);
+                     },
+                     error: function (xhr, status) {
+                         alert('Disculpe, existió un problema',status);
+                     }
+                 });
+         }
+         
+    </script>
+</head>
+<body>
+    <section id="mainContainer">
+        <nav class="navbar fixed-top navbar-home navbar-expand-lg navbar-light" id="navbar-container">
+            <div class="container-fluid m-auto">
+              <div class="iconNav-container col-5 d-flex">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/home/logoDezztechNav.png" alt="Navbar Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+              <div class="collapse col-9 navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="presupuesto.html">Presupuesto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+            
+        </nav>
+        <div class="imageBanner" style="background-image: url(../assets/home/nvidaBanner.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row text-center">
+                            <div class="d-flex w-100 gap-4 justify-content-center">
+                                <h3><a class="text-decoration-none" href="../index.html">Home</a></h3>
+                                <h2 class="dvdr">&#8680;</h2>
+                                <h3>Galería</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-sm">
+            <div class="row justify-content-center">
+              <div class="col col-md-10">
+                <div class="gallery-container" id="galleryContainer">
+                
+                    <a class="image-product-gallery" data-lightbox="example-set" href="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch_GEO_EMEA_FMT_WHH?wid=1280&hei=492&fmt=p-jpg&qlt=80&.v=UXp1U3VDY3IyR1hNdHZwdFdOLzg1V0tFK1lhSCtYSGRqMUdhR284NTN4K0VvSjFQM0pLN0VsK2pmbVJmK1hUZDhiZjRKRUJ6ZU96N3VHVCtXdS9WdVUzdWN4ZENIZEJCc01VOW1QK3BzTGVNdlIyKy9FMURXQmRzdk1KZVhnSDh1WjFlQndWT3ZmeW5zc3dRUHliS2dB&traceId=1">
+                        <img alt="galeria1" class="img-responsive" src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch_GEO_EMEA_FMT_WHH?wid=1280&hei=492&fmt=p-jpg&qlt=80&.v=UXp1U3VDY3IyR1hNdHZwdFdOLzg1V0tFK1lhSCtYSGRqMUdhR284NTN4K0VvSjFQM0pLN0VsK2pmbVJmK1hUZDhiZjRKRUJ6ZU96N3VHVCtXdS9WdVUzdWN4ZENIZEJCc01VOW1QK3BzTGVNdlIyKy9FMURXQmRzdk1KZVhnSDh1WjFlQndWT3ZmeW5zc3dRUHliS2dB&traceId=1">
+                    </a>
+                    <a class="image-product-gallery" data-lightbox="example-set" href="https://thumbnail.getalltool.com/lo/45676e-4.myshopify.com/ac717697bff35bcc2bcb4e1eff98c641_250">
+                        <img alt="galeria2" class="img-responsive" src="https://thumbnail.getalltool.com/lo/45676e-4.myshopify.com/ac717697bff35bcc2bcb4e1eff98c641_250" alt="reloj1"/>
+                    </a>
+                    <a class="image-product-gallery" data-lightbox="example-set" href="https://phonecityloscristianos.es/wp-content/uploads/2022/11/02-9-250x250.png">
+                        <img alt="galeria3" class="img-responsive" src="https://phonecityloscristianos.es/wp-content/uploads/2022/11/02-9-250x250.png" alt="reloj2"/>
+                    </a>
+                    <a class="image-product-gallery" data-lightbox="example-set" href="https://media.lifeinformatica.com/cdn-cgi/image/sharpen=0.5,f=auto/contents/Life/ASUS-90NB1022-M010U0/imgs/90NB1022-M010U0-01_150x150.png">
+                        <img alt="galeria4" class="img-responsive" src="https://media.lifeinformatica.com/cdn-cgi/image/sharpen=0.5,f=auto/contents/Life/ASUS-90NB1022-M010U0/imgs/90NB1022-M010U0-01_150x150.png" alt="portail"/>
+                    </a>
+                    <a class="image-product-gallery" data-lightbox="example-set" href="https://www.sony.es/image/79920c0c596896bc29cff03e56150d5e?fmt=png-alpha">
+                        <img alt="galeria5" class="img-responsive" src="https://www.sony.es/image/79920c0c596896bc29cff03e56150d5e?fmt=png-alpha" alt="camaraSony"/>
+                    </a>
+                    <a class="image-product-gallery" data-lightbox="example-set" href="https://cdn0.it4profit.com/s3size/el:t/f:webp/h:150/rt:fill/w:300/plain/s3://cms/category/ef/7d/ef7d85f6f5c6ac02f210f1bb78adeca7/webcams.webp">
+                        <img alt="galeria6" class="img-responsive" src="https://cdn0.it4profit.com/s3size/el:t/f:webp/h:150/rt:fill/w:300/plain/s3://cms/category/ef/7d/ef7d85f6f5c6ac02f210f1bb78adeca7/webcams.webp" alt="videocamara"/>
+                    </a>
+                    <a class="image-product-gallery" data-lightbox="example-set" href="https://i.blogs.es/96f1a3/razer-viper-ultimate/450_1000.webp">
+                        <img alt="galeria7" class="img-responsive" src="https://i.blogs.es/96f1a3/razer-viper-ultimate/450_1000.webp" alt="raton"/>
+                    </a>
+                    <a class="image-product-gallery" data-lightbox="example-set" href="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/legacy_bdt/Logitech%20MX%20Master%202S.png?tf=256x">
+                        <img alt="galeria8" class="img-responsive" src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/legacy_bdt/Logitech%20MX%20Master%202S.png?tf=256x" alt="raton2"/>
+                    </a>
+                    <a class="image-product-gallery" data-lightbox="example-set" href="https://www.newskillgaming.com/8156-home_default/newskill-chiron-raton-rgb.jpg">
+                        <img alt="galeria9" class="img-responsive" src="https://www.newskillgaming.com/8156-home_default/newskill-chiron-raton-rgb.jpg" alt="raton3"/>
+                    </a>
+                    <a class="image-product-gallery" data-lightbox="example-set" href="https://comprasmartphone.com/_next/image?url=https%3A%2F%2Fstorage.comprasmartphone.com%2Fsmartphones%2Fxiaomi-redmi-a3.png&w=640&q=75">
+                        <img alt="galeria10" class="img-responsive" src="https://comprasmartphone.com/_next/image?url=https%3A%2F%2Fstorage.comprasmartphone.com%2Fsmartphones%2Fxiaomi-redmi-a3.png&w=640&q=75" alt="movilXiami"/>
+                    </a>
+                    <a class="image-product-gallery" data-lightbox="example-set" href="https://eshopfrontend.orange.es/dw/image/v2/BJWB_PRD/on/demandware.static/-/Sites-devices-master-catalog/default/dwdf0dd298/images/3003645/GOOGLE-PIXEL-9-5G-12-128G-NEGRO_Front-Back.png?sw=960&sh=720&sm=fit">
+                        <img alt="galeria11" class="img-responsive" src="https://eshopfrontend.orange.es/dw/image/v2/BJWB_PRD/on/demandware.static/-/Sites-devices-master-catalog/default/dwdf0dd298/images/3003645/GOOGLE-PIXEL-9-5G-12-128G-NEGRO_Front-Back.png?sw=960&sh=720&sm=fit" alt="movilGooglePixel"/>
+                    </a>
+                    <a class="image-product-gallery" data-lightbox="example-set" href="https://media.cecotec.cloud/01729/power-espresso-20-barista-maestro_2rjxer_1.png:md">
+                        <img alt="galeria12" class="img-responsive" src="https://media.cecotec.cloud/01729/power-espresso-20-barista-maestro_2rjxer_1.png:md" alt="cafetera Barista"/>
+                    </a>
+                    <a class="image-product-gallery" data-lightbox="example-set" href="https://www.cafetearte.es/7019-large_default/cafetera-de-filtro-automatica-filka-con-jarra-de-cristal.jpg">
+                        <img alt="galeria13" class="img-responsive" src="https://www.cafetearte.es/7019-large_default/cafetera-de-filtro-automatica-filka-con-jarra-de-cristal.jpg" alt="cafetera Italiana"/>
+                    </a>
+
+                </div>
+              </div>
+            </div>
+        </div>
+        <div id="buttonToTop">
+            <button class="bg-red" style="width: 50px;height: 50px;" id="scrollToTopBtn">&#8679;</button>
+        </div>
+    </section>
+    <footer class="bg-dark text-light pt-5">
+        <div class="container">
+            <div class="col-md-12 text-center text-md-start">
+              <!-- Logo Dezztech -->
+                <div class="mb-4 flogo-container">
+                    <h3 class="text-uppercase d-flex justify-content-center"><img class="img-fluid" src="assets/home/dezztechLogoWhite.png" alt="logoFooter"></h3>
+                    <div class="text-center my-5">
+                      <h4>¡Todo lo que necesitas en tecnología y más!</h4>
+                      <p>
+                        En Dezztech somos tu tienda de confianza para encontrar lo último en tecnología, gaming y electrónica. 
+                      </p>
+                    </div>
+                </div>
+              <!-- ICONOS INFO -->
+                <div class="mb-4 d-flex justify-content-around">
+                    <div class="text-center">
+                        <img class="img-fluid" src="//ponno-demo.myshopify.com/cdn/shop/files/s1_compact.png?v=1613171497" alt="envioLogo">
+                        <h3>Envío Gratuito</h3>
+                        <p class="small">El envío de la mayoría de los productos es gratuito.</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="img-fluid" src="//ponno-demo.myshopify.com/cdn/shop/files/s2_compact.png?v=1613171497" alt="atencionClienteLogo">
+                        <h3>Atención al cliente</h3>
+                        <p class="small">24x7 Atención al cliente</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="img-fluid" src="//ponno-demo.myshopify.com/cdn/shop/files/s3_compact.png?v=1613171497" alt="pagoSeguroLogo">
+                        <h3>Pago seguro</h3>
+                        <p class="small">El pago más seguro para los clientes.</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-light">
+            <div class="row">
+                <!-- Links -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="text-uppercase text-underline">Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="componentes/contacto.html" class="text-light text-decoration-none">📥 Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- Contactos -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="text-uppercase">Info de Contacto</h4>
+                    <p class="small mb-1"><i class="bi bi-geo-alt"></i> 📍 Pl. Padre López, 1, 1°B</p>
+                    <p class="small mb-1"><i class="bi bi-envelope"></i> 📧 info@dezztech.com</p>
+                    <p class="small"><i class="bi bi-telephone"></i> ☎️ 924 924 924</p>
+                </div>
+                <!-- Newsletter -->
+                <div class="col-md-4">
+                    <h4 class="text-uppercase">Newsletter</h4>
+                    <p class="small">¡Sé el primero en enterarte!</p>
+                      <p>Suscríbete a nuestra newsletter y recibe:</p>
+                      <ul>
+                        <li>✅ Ofertas exclusivas y descuentos especiales.</li>
+                        <li>✅ Noticias, novedades y tips personalizados.</li>
+                        <li>✅ Contenido exclusivo directamente en tu bandeja.</li>
+                      </ul>
+                      
+                      <p> 👉 Es fácil y gratis. ¡Únete ahora y no te pierdas nada!</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="email@ejemplo.com">
+                        <button type="submit" class="btn btn-primary">→</button>
+                    </form>
+                    <div class="mt-3">
+                        <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-vimeo"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-pinterest"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-rss"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3">
+            <p class="mb-0 small">© 2025 Dezztech. Todos los derechos reservados.</p>
+        </div>
+  </footer>
+    <script src="../js/eventos.js"></script>
+</body>
+</html>

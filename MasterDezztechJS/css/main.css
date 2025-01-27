@@ -1,0 +1,126 @@
+/*MAIN CONTENT*/
+
+.main-content{
+    margin-top: 60px;
+    padding-bottom: 5%;
+}
+#mainContainer {
+background: #f7f8f9;
+}
+
+.imageBanner{
+    background: url(../assets/home/nvidaBanner.jpg) no-repeat center center;
+    color: white;
+    padding: 150px 100px 200px;
+    background-size: cover;
+
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    z-index: 100;
+    right: 3%;
+    bottom: 2%;
+    background: rgba(41,115,178,1);
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 35px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/*ESTILOS NAV*/
+.navbar-home {
+    background: rgb(41,115,178);
+    background: linear-gradient(90deg, rgba(41,115,178,1) 20%, rgba(72,166,167,1) 50%, rgba(154,203,208,1) 80%);
+    color: white;
+}
+.navbar-home a {
+    color: white !important;
+}
+
+.navbar-home ::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transition: transform 0.25s ease-out;
+}
+  
+  
+.navbar-home .nav-link::after {
+transform-origin: bottom center;
+}
+
+.navbar-home a:hover::after {
+transform-origin: bottom center;
+}
+
+.navbar-home .iconNav-container {
+    justify-content: flex-end;
+}
+.navbar-home #navbarNav a{
+    font-size: 20px;
+}
+
+/*BANNER IMAGEN*/
+
+.imageBanner h3 a {
+    color: white;
+}
+/*CAROUSEL PRODUCTOS*/
+
+.carousel-container {
+    background: url(../assets/home/fondo-carousel.webp) no-repeat;
+}
+.carousel-container .carousel-caption, .carousel-container .carousel-control-next {
+    color: black;
+
+}
+
+/*PRODUCTOS STOCK*/
+
+.productos-stock img{
+    transition: transform .2s;
+}
+.productos-stock img:hover{
+    transform: scale(1.05);
+}
+
+/*PRODUCTOS GALERIA*/
+
+
+.producto-container{
+    background: #f7f8f9 none repeat scroll 0 0;
+}
+
+#productosContainer .card {
+    border: 0px;
+}
+
+.producto-container .img-container{
+    border: 1px solid #e5e5e5;
+}
+
+#galleryContainer a.image-product-gallery {
+    color: transparent;
+}
+
+/*FOOTER*/
+
+footer h3 {
+    color: #2973b2;
+}
+
+footer h4 {
+    color: #9acbd0
+}
+
+footer .flogo-container img {
+    width: 30%;
+}
