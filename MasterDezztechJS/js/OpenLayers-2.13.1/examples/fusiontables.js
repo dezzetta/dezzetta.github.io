@@ -1,5 +1,5 @@
 // change this to your api key
-var apikey = "AIzaSyD_1zzMAoZjuP-m4LyhieuYmqiVJTEajyI";
+var apikey = "";
 
 var map = new OpenLayers.Map({
     div: "map",
