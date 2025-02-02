@@ -8,6 +8,26 @@
 background: #f7f8f9;
 }
 
+/*BANNER IMAGEN*/
+
+.imageBanner h3 a {
+    color: white;
+}
+/*CAROUSEL PRODUCTOS*/
+
+.carousel-container {
+    background: url(../assets/home/fondo-carousel.webp) no-repeat center center;
+    padding: 150px 100px 200px;
+    background-size: cover;
+
+}
+.carousel-container .carousel-caption, .carousel-container .carousel-control-next {
+    color: white;
+
+}
+
+/*IMAGE BANNER NVIDIA*/
+
 .imageBanner{
     background: url(../assets/home/nvidaBanner.jpg) no-repeat center center;
     color: white;
@@ -36,52 +56,18 @@ background: #f7f8f9;
     background: linear-gradient(90deg, rgba(41,115,178,1) 20%, rgba(72,166,167,1) 50%, rgba(154,203,208,1) 80%);
     color: white;
 }
-.navbar-home a {
-    color: white !important;
-}
 
-.navbar-home ::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #0087ca;
-    transition: transform 0.25s ease-out;
-}
-  
-  
-.navbar-home .nav-link::after {
-transform-origin: bottom center;
-}
-
-.navbar-home a:hover::after {
-transform-origin: bottom center;
-}
-
-.navbar-home .iconNav-container {
-    justify-content: flex-end;
-}
 .navbar-home #navbarNav a{
     font-size: 20px;
-}
-
-/*BANNER IMAGEN*/
-
-.imageBanner h3 a {
     color: white;
 }
-/*CAROUSEL PRODUCTOS*/
 
-.carousel-container {
-    background: url(../assets/home/fondo-carousel.webp) no-repeat;
+.navbar-home #navbarNav .resaltar{
+    padding-bottom: 2px;
+    border-bottom: 4px solid black;
 }
-.carousel-container .carousel-caption, .carousel-container .carousel-control-next {
-    color: black;
 
-}
+
 
 /*PRODUCTOS STOCK*/
 
@@ -110,6 +96,18 @@ transform-origin: bottom center;
 #galleryContainer a.image-product-gallery {
     color: transparent;
 }
+
+/*PRESUPUESTO FORMULARIO*/
+
+.form-presupuesto {
+    
+    margin: 3% auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 
 /*FOOTER*/
 

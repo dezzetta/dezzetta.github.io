@@ -9,167 +9,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="../css/main.css" rel="stylesheet">
-    <link href="../css/presupuesto.css" rel="stylesheet"> 
+    <script src="../js/botonTop.js"></script>
+
     <link rel="icon" href="../assets/home/iconDezztech.png">
 
     <title>Presupuesto</title>
 
     <script>
-        function validarFormulario(){
-            let valido  = true;
-    
-            /* CAMPO NOMBRE */
-            const nombreCampo = presupuestoFormulario.nombreCampo.value;
-            const nombreCampoValid = /^[a-zA-ZÁÉÍÓÚáéíóúÑñ\s]{1,15}$/;
-            const nombreCampoContent = document.getElementById("nombreCampoError");
-    
-            
-            if (!nombreCampoValid.test(nombreCampo) || nombreCampoContent ===""){
-                nombreCampoContent.textContent = "Solo se puede escribir texto y máximo 15 caracteres";
-                nombreCampoContent.style.display = "block";
-                valido = false;
-            }else {
-                nombreCampoContent.textContent= "";
-                nombreCampoContent.style.display = "none";
-            }
-    
-            /*CAMPO APELLIDO*/
-            const apellidoCampo = presupuestoFormulario.apellidoCampo.value;
-            const apellidoCampoValid = /^[a-zA-ZÁÉÍÓÚáéíóúÑñ\s]{1,40}$/;
-            const apellidoCampoContent = document.getElementById("apellidoCampoError");
-    
-            
-            if (!apellidoCampoValid.test(apellidoCampo) || apellidoCampoContent  === "" ){
-                apellidoCampoContent.textContent = "Solo se puede escribir texto y máximo 40 caracteres";
-                apellidoCampoContent.style.display = "block";
-                valido = false;
-            }else {
-                apellidoCampoContent.textContent = "";
-                apellidoCampoContent.style.display = "none";
-    
-            }
-            
-            /*CAMPO TELEFONO CONTACTO*/
-            const tlfCampo = presupuestoFormulario.tlfnCampo.value;
-            const tlfCampoValid = /^(?:[0-9] ?){1,9}$/;
-            const tlfnCampoContent = document.getElementById("tlfCampoError");
-    
-            
-            if (!tlfCampoValid.test(tlfCampo) || tlfnCampoContent  === ""){
-                tlfnCampoContent.textContent = "Solo se pueden escribir números de máximo 9 caracteres";
-                tlfnCampoContent.style.display = "block";
-                valido = false;
-            }else {
-                tlfnCampoContent.textContent = "";
-                tlfnCampoContent.style.display = "none";
-    
-            }
-    
-            /*CAMPO EMAIL*/
-            const emailCampo = presupuestoFormulario.emailCampo.value;
-            const emailCampoValid = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-            const emailCampoContent = document.getElementById("emailCampoError");
-    
-            
-            if (!emailCampoValid.test(emailCampo) || emailCampoContent  === "" ){
-                emailCampoContent.textContent = "El formato de email debe de ser el siguiente xxxxx@yyyy.com";
-                emailCampoContent.style.display = "block";
-                valido = false;
-            }else {
-                emailCampoContent.textContent = "";
-                emailCampoContent.style.display = "none";
-    
-            }
-    
-            /*CAMPO CHECK CONDICIONES*/
-            const checkCampo = document.getElementById("checkCondiciones");
-            const checkCampoContent = document.getElementById("condicionesCampoError");
-    
-            if (!checkCampo.checked) {
-                checkCampoContent.textContent = "Debes aceptar los términos y condiciones para continuar.";
-                checkCampoContent.style.display = "block";
-                valido = false;
-            }else{
-                checkCampoContent.textContent = "";
-                checkCampoContent.style.display = "none";
-            }
-    
-            /*CAMPO CHECK PRODUCTO*/
-            const checkProductoCampo = presupuestoFormulario.producto.value;
-            const checkProductoContent = document.getElementById("condicionesCampoError");
-    
-            if (!checkCampo.checked) {
-                checkCampoContent.textContent = "Debes aceptar los términos y condiciones para continuar.";
-                checkCampoContent.style.display = "block";
-                valido = false;
-            }else{
-                checkCampoContent.textContent = "";
-                checkCampoContent.style.display = "none";
-            }
-    
-            /*VALIDAR TODOS LOS CAMPOS*/
-            if (valido) {
-                alert("¡Formulario enviado con éxito!");
-                return true;
-            }
-            else {
-                return false;
-            }    
-    
-        }
-    
-    
-        function dataTest() {
-            presupuestoFormulario.nombreCampo.value = "12345678";
-            presupuestoFormulario.apellidoCampo.value = "2135123123";
-            presupuestoFormulario.tlfnCampo.value  = "12345678910";
-            presupuestoFormulario.emailCampo.value = "qweqwe123.com";
-            
-        }
-    
-        function dataTestSec() {
-            presupuestoFormulario.nombreCampo.value = "esto tiene más de quince caracteres";
-            presupuestoFormulario.apellidoCampo.value = "esta frase tiene es un test que tiene más de 40 caracteres";
-            presupuestoFormulario.tlfnCampo.value  = "esto tiene letras y no debería de validar el formulario";
-            presupuestoFormulario.emailCampo.value = "eqwtqwe";
-            
-        }
-    
-        function dataTestOk() {
-            presupuestoFormulario.nombreCampo.value = "Usuario MasterD";
-            presupuestoFormulario.apellidoCampo.value = "Apellido MasterD";
-            presupuestoFormulario.tlfnCampo.value  = "921 21 21 21";
-            presupuestoFormulario.emailCampo.value = "correomasterd@masterd.com";
-            
-        }
-    
-        function calcularPresupuesto() {
-            let producto = 0;
-            let extras = 0;
-            const plazo = document.getElementById("plazo").value;
-            const descuento =  plazo >= 12 && plazo < 24 ? 0.9 : plazo >= 24 && plazo < 36 ? 0.7 : plazo >= 36 ? 0.5 : 1; // 10% de descuento si plazo >= 12 meses
-            
-            /*document.querySelectorAll('#producto:checked').forEach((checkboxProducto) => {
-                producto += parseFloat(checkboxProducto.value);
-            });*/
-
-            document.querySelectorAll('.productos:checked').forEach((checkboxProducto) => {
-                producto += parseFloat(checkboxProducto.value);
-            });
-    
-            document.querySelectorAll('.extras:checked').forEach((checkboxExtra) => {
-                extras += parseFloat(checkboxExtra.value);
-            });
-    
-            const campoTotal = document.getElementById("presupuesto-final");
-            const total = (producto + extras) * descuento;
-    
-            campoTotal.textContent = total.toFixed(2);
-    
-            
-            /*---------*/
-        }
-    
         $(document).ready(function () {
             // Aquí utilizo jquery para actualizar dinámicamente el presupuesto
             $(".productos, #plazo, .extras").on("change", calcularPresupuesto);
@@ -185,35 +31,11 @@
     </script>
 </head>
 <body>
-  <section id="mainContainer">
+  <div id="mainContainer">
     <nav class="navbar fixed-top navbar-home navbar-expand-lg navbar-light" id="navbar-container">
-        <div class="container-fluid m-auto">
-          <div class="iconNav-container col-5 d-flex">
-            <a class="navbar-brand" href="../index.html"><img src="../assets/home/logoDezztechNav.png" alt="Navbar Logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div class="collapse col-9 navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="galeria.html">Galería</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="presupuesto.html">Presupuesto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-              </ul>
-          </div>
-        </div>
-        
+             
     </nav>
-    <section class="main-content">
+    <div class="main-content">
         <div class="imageBanner" style="background-image: url(../assets/home/nvidaBanner.jpg);">
             <div class="container">
                 <div class="row">
@@ -230,8 +52,8 @@
             </div>
         </div>
         <div class="form-container">
-            <form action="" method="NoValue" id="presupuestoFormulario" name="presupuestoFormulario" class="w-50 form-presupuesto g-3 needs-validation" onsubmit="return validarFormulario()" onreset="resetearErrores()">
-                <div class="form-section" id="datosContacto">
+            <form id="presupuestoFormulario" name="presupuestoFormulario" class="w-50 form-presupuesto g-3 needs-validation" onsubmit="return validarFormulario()" onreset="resetearErrores()">
+                <div class="form-div" id="datosContacto">
                     <h2>Datos de Contacto</h2>
                     
                     <div class="col-8">
@@ -269,7 +91,7 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="form-section" id="presupuesto">
+                    <div class="form-div" id="presupuesto">
                         <h2>Presupuesto</h2>
                         <label>Producto:</label><br>
                         <div class="form-group productosPrincipales">
@@ -334,7 +156,7 @@
                         <hr>
                         <div class="col-12">
                             <button class="btn btn-primary" type="submit" onclick="validarFormulario();">Enviar</button>
-                            <input class="btn btn-primary" type="reset" value="Reset" name="Reset" />
+                            <input class="btn btn-primary" type="reset" value="Reset" name="Reset">
                             <button class="btn btn-primary" type="submit" onclick="dataTest();">Test Error 1</button>
                             <button class="btn btn-primary" type="submit" onclick="dataTestSec();">Test Error 2</button>
                             <button class="btn btn-primary" type="submit" onclick="dataTestOk();">Test OK</button>
@@ -346,14 +168,14 @@
         <div id="buttonToTop">
             <button class="bg-red" style="width: 50px;height: 50px;" id="scrollToTopBtn">&#8679;</button>
         </div>
-    </section>
-</section>
+    </div>
+</div>
 <footer class="bg-dark text-light pt-5">
     <div class="container">
         <div class="col-md-12 text-center text-md-start">
           <!-- Logo Dezztech -->
             <div class="mb-4 flogo-container">
-                <h3 class="text-uppercase d-flex justify-content-center"><img class="img-fluid" src="assets/home/dezztechLogoWhite.png" alt="logoFooter"></h3>
+                <h3 class="text-uppercase d-flex justify-content-center"><img class="img-fluid" src="/assets/home/dezztechLogoWhite.png" alt="logoFooter"></h3>
                 <div class="text-center my-5">
                   <h4>¡Todo lo que necesitas en tecnología y más!</h4>
                   <p>
@@ -425,6 +247,9 @@
         <p class="mb-0 small">© 2025 Dezztech. Todos los derechos reservados.</p>
     </div>
 </footer>
-<script src="../js/eventos.js"></script>
+<script src="../js/presupuesto.js"></script>
+<script src="../js/navbar.js"></script>
+
+
 </body>
 </html>
